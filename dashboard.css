@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Social Media Related Styles */
+h4 {
+  font-weight: 700;
+  color: #fefefe;
+  text-align: center;
+}
+
+.social-media-twitter-wrapper {
+  height: 457px;
+  overflow: scroll;
+}
+
+.social-media-facebook-wrapper {
+  background-color: #fefefe;
+  border-radius: 8px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.navbar {
+  background-color: #3653a4;
+  height: 48px;
+}
+
+.nav-item {
+  width: 80px;
+}
+
+.nav-link {
+  color: #fefefe;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #fefefe !important;
+}
+
+.nav-link:focus {
+  background-color: #fefefe;
+  color: #3653a4 !important;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.navbar-logo {
+  width: 96px;
+}
+
+.navbar-text {
+  color: #fefefe;
+}
+
+.banner-wrapper {
+  padding-top: 48px; /* for overlapping of navbar and banner */
+  height: 100vh;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-media-card-wrapper {
+  background-color: #3653a4;
+}
+
+.social-media-card-wrapper h2 {
+  color: #fefefe;
+  text-align: center;
+}
+
+.social-media-card-wrapper h2 > span {
+  font-weight: 700;
+}
+
+footer {
+  background-color: #eeeeee;
+  color: #878681;
+  text-align: center;
+}
+
+footer > p {
+  padding: 8px 0;
+  margin: 0;
+}
+
+.konw-your-napier-wrapper {
+  background-color: #fefefe;
+  color: #67a242;
+  bottom: 20px;
+  left: 40px;
+  z-index: 5000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.konw-your-napier-wrapper > p {
+  margin: 0;
+  font-size: 1.4rem;
+  margin-right: 64px;
+}
+
+.konw-your-napier-wrapper > p > span {
+  font-weight: 700;
+}
+
+.chatbot-wrapper {
+  background-color: #fefefe;
+  bottom: 20px;
+  right: 40px;
+  z-index: 5000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.know-your-nap-expand-icon,
+.chatbot-expand-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.contact-support-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  filter: invert(100%);
+}
+
+#contactSupportBtn:hover > .contact-support-icon,
+.contact-support-icon:hover {
+  filter: unset !important;
+}
+
+.chatbot-icon,
+.right-arrow-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.know-your-nap-expand-icon:hover,
+.chatbot-icon:hover,
+.chatbot-expand-icon:hover {
+  transform: scale(1.2);
+}
+
+.chatbot-wrapper > p {
+  font-size: 1.2rem;
+  color: #3653a4;
+  margin: 0 64px 0 8px;
+}
+
+.modal-dialog {
+  width: 60%;
+}
+
+.modal-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header-container > h3 {
+  color: #67a242;
+}
+
+.modal-header-container > h3 > span {
+  font-weight: 700;
+}
+
+.tab-btn {
+  background-color: transparent;
+  border: 3px solid transparent;
+  padding: 8px 16px;
+  text-align: center;
+  color: #878681;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.active-tab-btn {
+  color: #3653a4;
+  border-bottom-color: #3653a4;
+}
+
+.read-more-link {
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.chatbot-chatbox-wrapper {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  background-color: #fefefe;
+  height: 400px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.chatbot-down-msg-one {
+  font-size: 1.3rem;
+  color: #878681;
+}
+
+.chatbot-down-msg-two {
+  font-size: 1.2rem;
+  color: #878681;
+}
+
+.chatbox-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 10px;
+  width: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+}
