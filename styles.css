@@ -38,6 +38,10 @@ h4 {
   content: none;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .navbar {
   background-color: #3653a4;
   height: 48px;
@@ -54,7 +58,10 @@ h4 {
 }
 
 .nav-link:hover {
-  color: #fefefe !important;
+  background-color: #fefefe;
+  color: #3653a4 !important;
+  border-radius: 4px;
+  font-weight: 700;
 }
 
 .nav-link:focus {
@@ -148,10 +155,15 @@ footer > p {
 }
 
 .know-your-nap-expand-icon,
-.chatbot-expand-icon {
+.chatbot-expand-icon,
+.notification-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.notification-icon:hover {
+  transform: scale(1.1);
 }
 
 .contact-support-icon {
