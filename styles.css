@@ -103,7 +103,8 @@ h4 {
 
 .carousel-item > img {
   height: 100%;
-  object-fit: cover;
+  /* at bigger screen sizes, banner content was overflowing horizontally as 'cover' maintains aspect ratio strictly */
+  object-fit: fill;
 }
 
 .social-media-card-wrapper {
