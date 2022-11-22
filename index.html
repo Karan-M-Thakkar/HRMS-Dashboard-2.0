@@ -35,7 +35,7 @@
     <!-- JavaScript SDK from Facebook for Embedding Facebook page : end -->
     <nav class="navbar navbar-expand fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand me-5" href="#">
+        <a class="navbar-brand me-4" href="#">
           <img
             class="navbar-logo"
             src="./resources/images/napier-healthcare-logo.png"
@@ -44,7 +44,7 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown me-4" ng-repeat="module in modules">
+            <li class="nav-item dropdown me-4" ng-repeat="category in categories">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -52,31 +52,38 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                title="{{category.category}}"
               >
-                {{module.module}}
+                {{category.category}}
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li ng-repeat="role in module.roles">
-                  <a class="dropdown-item" href="#">{{role}}</a>
+                <li ng-repeat="module in category.modules">
+                  <a class="dropdown-item" href="#">{{module}}</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <span class="navbar-text me-2"> Welcome Karankumar Thakkar </span>
-          <img class="notification-icon me-3" src="./resources/images/notification.png" alt="">
-          <button
-            id="contactSupportBtn"
-            type="button"
-            class="btn btn-outline-light me-3"
-          >
-            <img
-              class="contact-support-icon"
-              src="./resources/images/support.png"
-              alt=""
-            />
-            Contact Support
-          </button>
-          <button type="button" class="btn btn-warning">Sign Out</button>
+          <div class="navbar-actions-container">
+            <div class="navbar-username-container mb-2">
+              <img class="notification-icon me-2" src="./resources/images/notification.png" alt="">
+              <span class="navbar-text"> Welcome Thakkar Karankumar Mahendrabhai </span>
+            </div>
+            <div class="navbar-actions-btn-container">
+              <button
+                id="contactSupportBtn"
+                type="button"
+                class="btn btn-outline-light me-3"
+              >
+                <img
+                  class="contact-support-icon"
+                  src="./resources/images/support.png"
+                  alt=""
+                />
+                Contact Support
+              </button>
+              <button type="button" class="btn btn-warning">Sign Out</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

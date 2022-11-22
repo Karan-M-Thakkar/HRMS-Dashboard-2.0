@@ -44,11 +44,7 @@ h4 {
 
 .navbar {
   background-color: #3653a4;
-  height: 48px;
-}
-
-.nav-item {
-  width: 80px;
+  height: 72px;
 }
 
 .nav-link {
@@ -71,6 +67,15 @@ h4 {
   font-weight: 700;
 }
 
+.nav-link::before {
+  display: block;
+  content: attr(title);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 .navbar-logo {
   width: 96px;
 }
@@ -79,8 +84,14 @@ h4 {
   color: #fefefe;
 }
 
+.navbar-actions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .banner-wrapper {
-  padding-top: 48px; /* for overlapping of navbar and banner */
+  padding-top: 72px; /* for overlapping of navbar and banner */
   height: 100vh;
 }
 

@@ -2,62 +2,72 @@ const dashboardApp = angular.module("dashboardApp", []);
 dashboardApp.controller("dashboardCtrl", function ($scope, $log) {
   $log.info("Controller loaded successfully!");
 
-  $scope.modules = [
+  $scope.categories = [
     {
-      module: "HR",
-      roles: [
-        "Attendance",
-        "Direct Reportee Details",
-        "HRIS",
-        "Masters",
-        "Security Masters",
-        "COBC Quiz",
-        "COBC & CGLR Report",
-        "Policy Documents",
+      category: "HRMS",
+      modules: [
+        "Approve Probation Confirmation",
+        "Approve Resignation/Probation",
+        "Employee Probation",
+        "Record Resignation",
+        "Onboard",
+        "New Hire Survey",
+        "HRF",
+        "Employee Exit Interview",
       ],
     },
     {
-      module: "FINANCE",
-      roles: [
+      category: "Prod & Proj Planning",
+      modules: ["QGate Management", "PRC", "PR & PO"],
+    },
+    {
+      category: "Performance",
+      modules: [
+        "COBC Quiz",
         "RTM",
+        "RTM Report",
         "RTM Admin",
         "RTM Resource Manager",
         "Performance Review System(PRS)",
-        "Finance Dashboard",
-        "QGate Management",
-        "PR & PO",
-        "HRF",
+        "Productivity Tracking",
+      ],
+    },
+    {
+      category: "General",
+      modules: [
+        "Direct Reportee Details",
+        "HRIS",
+        "Policy Documents",
         "Calendar Automation",
         "Organization Tree",
       ],
     },
     {
-      module: "HIRING",
-      roles: [
-        "Approve Probation Confirmation",
-        "Approve Resignation/Probation",
-        "Onboard",
-        "New Hire Survey",
-        "Employee Exit Interview",
-      ],
+      category: "Master Config",
+      modules: ["Masters", "Security Masters"],
     },
     {
-      module: "PROCESS",
-      roles: [
+      category: "Leave & Attendance",
+      modules: [
         "Apply Leave",
         "Approve Attendance Regularization",
         "Approve Leave",
+        "Attendance",
         "Leave Management",
-        "Employee Probation",
-        "Record Resignation",
-        "PRC",
-        "VOC",
-        "Productivity Tracking",
       ],
     },
     {
-      module: "REPORTS",
-      roles: ["Reports", "RTM Report", "Finance Reports"],
+      category: "Reports",
+      modules: [
+        "Reports",
+        "COBC & CGLR Report",
+        "Finance Reports",
+        "Finance Dashboard",
+      ],
+    },
+    {
+      category: "Feedback",
+      modules: ["VOC"],
     },
   ];
 
